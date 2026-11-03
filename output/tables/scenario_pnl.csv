@@ -1,0 +1,7 @@
+trade,scenario,mpc_day_pnl,carry_roll_3m,pnl_3m_total
+Primary: MGS 5s10s steepener,hold,9627.0,34619.0,44246.0
+Primary: MGS 5s10s steepener,hike25,-30249.0,34619.0,4370.0
+Primary: MGS 5s10s steepener,cut25,64806.0,34619.0,99425.0
+Alternative: FX-hedged MGS 7Y vs SGS 7Y,hold,0.0,25688.0,25688.0
+Alternative: FX-hedged MGS 7Y vs SGS 7Y,hike25,-24673.0,25688.0,1016.0
+Alternative: FX-hedged MGS 7Y vs SGS 7Y,cut25,24823.0,25688.0,50511.0

@@ -1,0 +1,226 @@
+{
+  "levels_bp": {
+    "mgs_5s10s_bp": 22.0,
+    "mgs_2s10s_bp": 60.0,
+    "mgs_7s10s_bp": 2.0,
+    "mgs_5s10s_ns_fair_bp": 33.55,
+    "mgs_5s10s_benchmark_bp": 23.0,
+    "mgs7_sgs7_bp": 176.6,
+    "hedged_mgs7_vs_sgs7_bp": 70.11
+  },
+  "hedge_cost_bp": {
+    "3m_rolling": 106.5,
+    "1y_matched": 114.8
+  },
+  "nelson_siegel": {
+    "MGS": {
+      "lambda": 3.68,
+      "beta_pct": [
+        4.559,
+        -1.651,
+        0.001
+      ],
+      "rmse_bp": 3.65
+    },
+    "SGS": {
+      "lambda": 1.56,
+      "beta_pct": [
+        2.433,
+        -0.443,
+        -1.049
+      ],
+      "rmse_bp": 5.22
+    }
+  },
+  "trades": {
+    "Primary: MGS 5s10s steepener": {
+      "net_dv01_rm": 0.0,
+      "carry_roll_3m_rm": 34619.0,
+      "net_cash_rm": 9814114.0,
+      "legs": [
+        {
+          "bond": "MGS 4/2011 4.232% 30.06.2031",
+          "notional": 19098831.88,
+          "yield_pct": 3.67,
+          "dv01": 8223.25
+        },
+        {
+          "bond": "MGS 4/2026 3.920% 31.10.2036",
+          "notional": -10000000.0,
+          "yield_pct": 3.9,
+          "dv01": -8223.25
+        }
+      ]
+    },
+    "Alternative: FX-hedged MGS 7Y vs SGS 7Y": {
+      "net_dv01_rm": -396.2,
+      "carry_roll_3m_rm": 25688.0,
+      "net_cash_rm": 0.0,
+      "legs": [
+        {
+          "bond": "MGS 7Y",
+          "notional": 10000000.0,
+          "yield_pct": 3.88,
+          "dv01": 6078.76
+        },
+        {
+          "bond": "SGS 7Y",
+          "notional": -10000000.0,
+          "yield_pct": 2.11,
+          "dv01": -6475.01
+        }
+      ]
+    }
+  },
+  "history_5s10s": {
+    "stats": {
+      "start": "2023-11-01",
+      "end": "2026-11-03",
+      "n_obs": 736,
+      "today_bp": 23.0,
+      "fmip_last_bp": 23.0,
+      "mean_bp": 23.405,
+      "sd_bp": 4.422,
+      "min_bp": 12.0,
+      "max_bp": 39.0,
+      "z_full": -0.092,
+      "pctile_full": 52.853,
+      "target_bp": 28.0,
+      "share_ge_target_pct": 18.207,
+      "share_le_stop_pct": 3.668,
+      "mean_1y_bp": 22.583,
+      "sd_1y_bp": 3.643,
+      "z_1y": 0.114,
+      "ar1_daily": {
+        "a": 2.519,
+        "phi": 0.893,
+        "se_phi": 0.017,
+        "df_t": -6.47,
+        "half_life": 6.102,
+        "long_run_mean": 23.456,
+        "resid_sd": 1.99,
+        "n": 735
+      },
+      "ar1_weekly": {
+        "a": 6.998,
+        "phi": 0.702,
+        "se_phi": 0.056,
+        "df_t": -5.273,
+        "half_life": 1.962,
+        "long_run_mean": 23.517,
+        "resid_sd": 3.169,
+        "n": 157
+      },
+      "n_stale_5y": 25,
+      "n_stale_10y": 15,
+      "n_switch_days": 6,
+      "switch_dates": [
+        "2024-04-01",
+        "2024-08-29",
+        "2025-05-15",
+        "2025-06-30",
+        "2026-02-27",
+        "2026-10-30"
+      ],
+      "switch_jumps_bp": [
+        -8.0,
+        -3.0,
+        2.0,
+        -7.0,
+        -4.0,
+        -2.0
+      ]
+    },
+    "params": {
+      "x_bp": 5.0,
+      "target": 5.0,
+      "stop": 7.0,
+      "target_bp": 28.0,
+      "stop_bp": 16.0,
+      "max_hold": 63,
+      "window": 252,
+      "live_band": [
+        21.0,
+        25.0
+      ]
+    },
+    "signal_today": {
+      "rolling_mean_bp": 22.583,
+      "gap_bp": 0.417,
+      "entry_line_bp": 17.583,
+      "triggered": false
+    },
+    "backtest": {
+      "x_bp": 5.0,
+      "n_trades": 11,
+      "open_trade": false,
+      "days_in_market_pct": 17.799,
+      "max_dd_rm": -89864.516,
+      "hit_rate_pct": 90.909,
+      "avg_pnl_rm": 34189.48,
+      "avg_pnl_bp": 4.125,
+      "avg_spread_rm": 33149.932,
+      "avg_carry_rm": 1039.548,
+      "total_pnl_rm": 376084.278,
+      "avg_win_rm": 43277.635,
+      "avg_loss_rm": -56692.071,
+      "worst_rm": -56692.071,
+      "avg_days": 11.909,
+      "median_days": 11.0,
+      "dv01_rm": 8304.138,
+      "n_target": 10,
+      "n_stop": 1,
+      "n_time": 0
+    },
+    "live_setup_odds": {
+      "n": 269,
+      "target_pct": 63.941,
+      "stop_pct": 18.959,
+      "time_pct": 17.1,
+      "avg_move_bp": 1.903,
+      "avg_days": 28.829
+    },
+    "below_line_odds": {
+      "n": 63,
+      "target_pct": 76.19,
+      "stop_pct": 9.524,
+      "time_pct": 14.286,
+      "avg_move_bp": 3.175,
+      "avg_days": 26.714
+    },
+    "all_days_odds": {
+      "n": 673,
+      "target_pct": 63.447,
+      "stop_pct": 20.208,
+      "time_pct": 16.345,
+      "avg_move_bp": 1.951,
+      "avg_days": 26.614
+    }
+  },
+  "live_trade": {
+    "entry_bp": 23.0,
+    "target_bp": 28.0,
+    "stop_bp": 16.0,
+    "ns_fair_bp": 33.55,
+    "reward_bp": 5.0,
+    "risk_bp": 7.0,
+    "reward_risk": 0.71,
+    "dv01_rm": 8223.25,
+    "pnl_at_target_rm": 41116.25,
+    "pnl_at_stop_rm": -57562.75,
+    "breakeven_hit_pct": 58.33,
+    "carry_roll_3m_rm": 34618.67,
+    "carry_roll_3m_bp": 4.21,
+    "target_plus_carry_rm": 75734.91
+  },
+  "expected_pnl_rm": {
+    "Primary: MGS 5s10s steepener": {
+      "mpc_day": 2417.0,
+      "total_3m": 37036.0
+    },
+    "Alternative: FX-hedged MGS 7Y vs SGS 7Y": {
+      "mpc_day": -4927.0,
+      "total_3m": 20761.0
+    }
+  }
+}

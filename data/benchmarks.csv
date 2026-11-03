@@ -1,0 +1,3 @@
+name,curve,coupon_pct,maturity,yield_pct,as_of,source,note
+MGS 4/2011,MGS,4.232,2031-06-30,3.67,2026-11-03,BNM FMIP benchmark yields (closing),5Y benchmark; FMIP shows coupon 4.23
+MGS 4/2026,MGS,3.920,2036-10-31,3.90,2026-11-03,BNM FMIP benchmark yields (closing); BNM auction results (MN260004),10Y benchmark; coupon as shown on FMIP (2dp)

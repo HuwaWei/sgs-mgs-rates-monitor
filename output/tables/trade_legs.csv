@@ -1,0 +1,5 @@
+bond,curve,tenor,coupon_pct,notional,yield_pct,dirty_price,cash,dv01,carry_3m,roll_3m,mod_duration,convexity,trade
+MGS 4/2011 4.232% 30.06.2031,MGS,4.66,4.23,19098831.88,3.67,103.83,19830544.33,8223.25,34207.69,23448.77,4.15,20.4,Primary: MGS 5s10s steepener
+MGS 4/2026 3.920% 31.10.2036,MGS,10.0,3.92,-10000000.0,3.9,100.16,-10016430.61,-8223.25,-23037.79,-0.0,8.21,79.37,Primary: MGS 5s10s steepener
+MGS 7Y,MGS,7.0,3.88,10000000.0,3.88,100.0,10000000.0,6078.76,70377.12,14737.16,6.08,42.86,Alternative: FX-hedged MGS 7Y vs SGS 7Y
+SGS 7Y,SGS,7.0,2.11,-10000000.0,2.11,100.0,-10000000.0,-6475.01,-52850.0,-6575.89,6.48,46.96,Alternative: FX-hedged MGS 7Y vs SGS 7Y

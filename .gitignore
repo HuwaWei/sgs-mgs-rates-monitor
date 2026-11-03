@@ -1,0 +1,27 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Node (PDF build)
+node_modules/
+
+# Intermediate PDF build files
+report/*.html
+
+# Local / private working folders
+private/
+scratch/
+*.local.*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

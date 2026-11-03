@@ -1,0 +1,13 @@
+curve,forward,rate_pct
+MGS,1y1y,3.508
+MGS,2y1y,3.611
+MGS,3y2y,4.144
+MGS,5y5y,4.158
+MGS,10y5y,4.934
+MGS,10y10y,4.845
+SGS,1y1y,1.839
+SGS,2y1y,2.033
+SGS,3y2y,2.199
+SGS,5y5y,2.48
+SGS,10y5y,2.411
+SGS,10y10y,2.254

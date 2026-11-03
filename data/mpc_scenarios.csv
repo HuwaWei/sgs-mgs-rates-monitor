@@ -1,0 +1,31 @@
+scenario,curve,tenor_years,shift_bp,rationale
+hold,MGS,0.25,0,consensus outcome; front end already anchored at OPR 2.75
+hold,MGS,1,-2,small relief as hike premium in 1Y (35bp over OPR) bleeds
+hold,MGS,2,-2,as above
+hold,MGS,3,-1,as above
+hold,MGS,5,0,belly unchanged
+hold,MGS,7,0,belly unchanged
+hold,MGS,10,1,long end keeps tracking UST 10Y ~4.9% and foreign selling
+hold,MGS,30,1,as above
+hike25,MGS,0.25,22,full pass-through to bills
+hike25,MGS,1,18,front reprices most: bear flattener
+hike25,MGS,2,15,as above
+hike25,MGS,3,12,as above
+hike25,MGS,5,8,as above
+hike25,MGS,7,6,credibility/FX support caps long end
+hike25,MGS,10,5,as above
+hike25,MGS,30,4,as above
+cut25,MGS,0.25,-22,full pass-through to bills
+cut25,MGS,1,-20,front rallies most: bull steepener
+cut25,MGS,2,-18,as above
+cut25,MGS,3,-15,as above
+cut25,MGS,5,-10,as above
+cut25,MGS,7,-6,long end held back by UST and MYR/outflow risk
+cut25,MGS,10,-3,as above
+cut25,MGS,30,-2,as above
+hold,SGS,0.5,0,BNM decision has negligible read-across to SGS
+hold,SGS,50,0,as above
+hike25,SGS,0.5,1,minor regional sympathy
+hike25,SGS,50,1,as above
+cut25,SGS,0.5,-1,minor regional sympathy
+cut25,SGS,50,-1,as above
