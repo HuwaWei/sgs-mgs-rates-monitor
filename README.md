@@ -2,6 +2,16 @@
 
 Relative-value research on the Malaysian (MGS) and Singapore (SGS) government bond curves ahead of Bank Negara Malaysia's 5 Nov 2026 policy meeting. It covers curve construction, carry and roll-down, FX-hedged cross-market value and MPC scenario P&L, all reproducible in Python.
 
+## Post-MPC update (5 Nov 2026)
+
+**BNM held the OPR at 2.75%, the pitch's hold scenario (70%).** The statement called the stance "consistent with the outlook of continued price stability". It also said inflation is "expected to edge higher" in 2027 and that the MPC "will remain vigilant to cost pressures and domestic demand conditions", which makes it a hold with a mild hawkish tilt.
+
+- **Both trades: hold.** No stop or guidance trigger was hit. Steepener levels stay 23 / 28 / 16bp; don't add, since hike risk has moved to the first meetings of 2027.
+- **Expected P&L (hold scenario):** primary +RM9.6k on the day, **+RM44.2k over 3M**; alternative +RM25.7k over 3M. Mark-to-market against the 5 Nov FMIP close will be added once published.
+- **Lesson:** one "hold" scenario was too coarse. A hawkish hold keeps the front-end hike premium in place and shrinks the MPC-day gain.
+
+Full review: **[report/post_mpc_review.md](report/post_mpc_review.md)**. The pitch below was committed on 3 Nov 2026, before the decision.
+
 ## Summary
 
 *Levels: MGS 3 Nov 2026 (BNM FMIP), SGS 30 Oct 2026 (MAS).*
